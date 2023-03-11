@@ -97,14 +97,22 @@ line-height: 16px;
 letter-spacing: 0.02em;
 }
 
-.link{
+.contact-mail,
+.contact-phone{
 color: black;
+text-decoration: none;
+font-weight: 500;
+line-height: 1.42;
+letter-spacing: 0.02em;
 text-decoration: none;
 }
 
-.link:hover{
+.contact-mail:hover,
+.contact-phone:hover{
     color: #2196F3;
 }
+
+
 
 .navigation-list li a{
     font-family: 'Roboto';
@@ -369,6 +377,13 @@ border-bottom: 1px solid #ECECEC;
     display: flex;
 }
 
+.projects-list li:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-list{
     display: flex;
     justify-content: space-between;
@@ -399,6 +414,8 @@ border-bottom: 1px solid #ECECEC;
     padding-top: 0
 }
 
+
+
 .footer-section {
     display: flex;
     justify-content: center;
@@ -420,16 +437,21 @@ border-bottom: 1px solid #ECECEC;
 
 /* HOMEWORK 4 */
 
-.header-icon-items a {
-    margin-right: 10px;
+
+.envelope,
+.phone {
+  fill: gray;
+  margin-right: 6px;
 }
 
-.header-icon {
-    fill: #757575;
+.envelope:hover,
+.envelope:focus,
+.phone:hover,
+.phone.focus {
+  fill: #2196F3 ;
+} 
 
-}
-
-.header-icon:hover {
+.header-icon a svg:hover {
     fill: #2196F3;
 }
 
